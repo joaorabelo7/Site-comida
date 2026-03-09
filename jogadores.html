@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <title>NBA Food - Jogadores</title>
+  <link rel="stylesheet" href="/css/main.css">
+</head>
+
+<body>
+
+  <!-- MENU -->
+  <nav class="menu">
+
+    <div class="logo">NBA Food</div>
+
+    <ul>
+      <li><a href="/main.html">Times</a></li>
+      <li><a href="/register">Criar Conta</a></li>
+      <li><a href="/logout">Sair</a></li>
+    </ul>
+
+  </nav>
+
+  <header>
+    <h1>Pratos Inspirados em Jogadores</h1>
+    <p>Comidas especiais baseadas nas estrelas da NBA</p>
+  </header>
+
+  <main class="container">
+
+    <!-- CONFERÊNCIA LESTE -->
+    <div class="column">
+
+      <h2 class="conference">Conferência Leste</h2>
+
+      <div class="card"
+        data-title="Bam Block Party Bowl"
+        data-img="https://images.unsplash.com/photo-1512621776951-a57141f2eefd"
+        data-desc="Bowl energético inspirado na força e defesa de Bam Adebayo.">
+
+        <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1628389.png">
+
+        <h3>Bam Adebayo</h3>
+        <p>Bam Block Party Bowl</p>
+
+      </div>
+
+      <div class="card"
+        data-title="JB Green Power Steak"
+        data-img="https://images.unsplash.com/photo-1600891964599-f61ba0e24092"
+        data-desc="Steak poderoso inspirado na força e versatilidade de Jaylen Brown.">
+
+        <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1627759.png">
+
+        <h3>Jaylen Brown</h3>
+        <p>JB Green Power Steak</p>
+
+      </div>
+
+        <div class="card"
+        data-title="Maxey Speed Chicken Sandwich"
+        data-img="https://images.unsplash.com/photo-1606755962773-d324e0a13086"
+        data-desc="Sanduíche de frango crocante inspirado na velocidade e explosão de Tyrese Maxey.">
+
+        <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1630178.png">
+
+        <h3>Tyrese Maxey</h3>
+        <p>Maxey Speed Chicken Sandwich</p>
+
+        </div>
+
+    </div>
+
+    <!-- CONFERÊNCIA OESTE -->
+    <div class="column">
+
+      <h2 class="conference">Conferência Oeste</h2>
+
+      <div class="card"
+        data-title="Morant Air Time Burger"
+        data-img="https://images.unsplash.com/photo-1550547660-d9450f859349"
+        data-desc="Burger explosivo inspirado nas enterradas de Ja Morant.">
+
+        <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1629630.png">
+
+        <h3>Ja Morant</h3>
+        <p>Morant Air Time Burger</p>
+
+      </div>
+
+      <div class="card"
+        data-title="SGA Smooth Thunder Bowl"
+        data-img="https://images.unsplash.com/photo-1512621776951-a57141f2eefd"
+        data-desc="Bowl equilibrado e elegante inspirado no estilo suave de Shai.">
+
+        <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/1628983.png">
+
+        <h3>Shai Gilgeous-Alexander</h3>
+        <p>SGA Smooth Thunder Bowl</p>
+
+      </div>
+
+      <div class="card"
+        data-title="King James Royal Stack"
+        data-img="https://images.unsplash.com/photo-1600891964092-4316c288032e"
+        data-desc="Prato poderoso digno do rei da NBA, LeBron James.">
+
+        <img src="https://cdn.nba.com/headshots/nba/latest/1040x760/2544.png">
+
+        <h3>LeBron James</h3>
+        <p>King James Royal Stack</p>
+
+      </div>
+
+    </div>
+
+    <!-- MODAL -->
+    <div id="foodModal" class="modal">
+
+      <div class="modal-content">
+
+        <span class="close">&times;</span>
+
+        <h2 id="foodTitle"></h2>
+
+        <img
+          id="foodImage"
+          style="width:100%; max-height:250px; object-fit:cover; border-radius:10px;"
+        >
+
+        <p id="foodDescription"></p>
+
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="/js/app.js"></script>
+
+</body>
+</html>

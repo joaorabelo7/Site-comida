@@ -1,0 +1,140 @@
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+  font-family:Segoe UI, sans-serif;
+}
+
+body{
+  background:linear-gradient(135deg,#ff7b00,#ff3c38);
+  min-height:100vh;
+}
+
+/* MENU */
+
+.menu{
+  display:flex;
+  justify-content:space-between;
+  align-items:center;
+  background:#111;
+  padding:15px 40px;
+  width:100%;
+}
+
+.menu .logo{
+  color:white;
+  font-size:20px;
+  font-weight:bold;
+}
+
+.menu ul{
+  display:flex;
+  list-style:none;
+  gap:25px;
+}
+
+.menu a{
+  text-decoration:none;
+  color:white;
+  font-size:16px;
+  transition:0.3s;
+}
+
+.menu a:hover{
+  color:#ff7b00;
+}
+
+/* HEADER */
+
+header{
+  text-align:center;
+  color:white;
+  margin-top:40px;
+  margin-bottom:40px;
+}
+
+header h1{
+  font-size:40px;
+  margin-bottom:10px;
+}
+
+/* LAYOUT */
+
+.container{
+  display:flex;
+  justify-content:center;
+  gap:70px;
+  padding-bottom:40px;
+}
+
+/* COLUNAS */
+
+.column{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  gap:20px;
+}
+
+.conference{
+  color:white;
+  font-size:24px;
+  margin-bottom:10px;
+}
+
+/* CARDS */
+
+.card{
+  background:white;
+  padding:20px;
+  border-radius:15px;
+  width:230px;
+  text-align:center;
+  box-shadow:0 10px 25px rgba(0,0,0,0.2);
+  transition:0.3s;
+}
+
+.card:hover{
+  transform:translateY(-8px) scale(1.03);
+}
+
+.card img{
+  width:90px;
+  margin-bottom:10px;
+}
+
+.card h3{
+  margin-bottom:6px;
+}
+
+.card p{
+  color:#ff3c38;
+  font-weight:bold;
+}
+
+.modal{
+display:none;
+position:fixed;
+z-index:1000;
+left:0;
+top:0;
+width:100%;
+height:100%;
+background:rgba(0,0,0,0.6);
+}
+
+.modal-content{
+background:white;
+padding:30px;
+border-radius:10px;
+width:400px;
+margin:15% auto;
+text-align:center;
+box-shadow:0 10px 30px rgba(0,0,0,0.3);
+}
+
+.close{
+float:right;
+font-size:28px;
+cursor:pointer;
+}
